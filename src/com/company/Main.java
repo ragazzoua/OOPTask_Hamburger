@@ -11,6 +11,10 @@ public class Main {
 
         HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.66);
         healthyBurger.addHamburgerAddition1("Egg", 5.43);
-        healthyBurger.itemizeHamburger();
+        System.out.println("Total Healthy burger = "+ healthyBurger.itemizeHamburger());
+
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        deluxeBurger.addHamburgerAddition2("",12.55);
+        deluxeBurger.itemizeHamburger();
     }
 }

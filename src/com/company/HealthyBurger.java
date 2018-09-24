@@ -17,12 +17,22 @@ public class HealthyBurger extends Hamburger {
     }
 
     public void addAdditional1(String name, double price) {
-        this.healthyExtra1Name = healthyExtra1Name;
-        this.healthyExtra1Price = healthyExtra1Price;
+        this.healthyExtra1Name = name;
+        this.healthyExtra1Price = price;
     }
 
     public void addAdditional2(String name, double price) {
-        this.healthyExtra2Name = healthyExtra1Name;
-        this.healthyExtra2Price = healthyExtra1Price;
+        this.healthyExtra2Name = name;
+        this.healthyExtra2Price = price;
+    }
+
+    @Override
+    public double itemizeHamburger() {
+        double hamburgerPrice = super.itemizeHamburger();
+        if (this.healthyExtra1Name != null) {
+            hamburgerPrice += this.healthyExtra1Price;
+            System.out.println("Added " + this.healthyExtra1Name + " for an Extra" + this.healthyExtra2Price);
+        }
+        return hamburgerPrice;
     }
 }
