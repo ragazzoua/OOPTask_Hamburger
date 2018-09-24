@@ -55,19 +55,19 @@ public class Hamburger {
         System.out.println(this.name + " hamburger " + " on a " + this.breadRollType + " roll " + " with " +  this.meat +  " price is " + this.price);
         if (this.additional1Name != null) {
             hamburgerPrice += this.additional1Price;
-            System.out.println("Added " + this.additional1Name + " for an extra" + this.additional1Price);
+            System.out.println("Added " + this.additional1Name + " for an extra " + this.additional1Price);
         }
         if (this.additional2Name != null) {
             hamburgerPrice += this.additional1Price;
-            System.out.println("Added " + this.additional2Name + " for an extra" + this.additional2Price);
+            System.out.println("Added " + this.additional2Name + " for an extra " + this.additional2Price);
         }
         if (this.additional3Name != null) {
             hamburgerPrice += this.additional3Price;
-            System.out.println("Added " + this.additional3Name + " for an extra" + this.additional3Price);
+            System.out.println("Added " + this.additional3Name + " for an extra " + this.additional3Price);
         }
         if (this.additional4Name != null) {
             hamburgerPrice += this.additional4Price;
-            System.out.println("Added " + this.additional4Name + " for an extra" + this.additional4Price);
+            System.out.println("Added " + this.additional4Name + " for an extra " + this.additional4Price);
         }
         return hamburgerPrice;
     }

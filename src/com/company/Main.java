@@ -8,5 +8,9 @@ public class Main {
         hamburger.addHamburgerAddition2("Lettuce", 0.88);
         hamburger.addHamburgerAddition3("Chesse", 1.12);
         System.out.println("Total price " + hamburger.itemizeHamburger());
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.66);
+        healthyBurger.addHamburgerAddition1("Egg", 5.43);
+        healthyBurger.itemizeHamburger();
     }
 }
